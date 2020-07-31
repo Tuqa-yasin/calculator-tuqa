@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            #clear{
+                width:173px;   
+            }
+            .calculat-form{
+                width:179px;
+                height: 268px;
+                margin: auto;
+                border: 5px solid black;
+                border-radius: 9px;
+                background-color: lightgray;
+                text-align: center;
+                padding-top: 10px;
+            }
+            input{
+                
+                width:40px;
+                background-color:cornflowerblue;
+                color: white;
+                border-radius: 9px;
+                border: 1px solid gray;
+            }
+            #result{
+                width: 164px;
+                height: 30px;
+                background-color:darkseagreen;
+                border-radius: 9px;
+                
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+        <h1 style="color:crimson;text-align: center;">Simple calculator using javascript , html and CSS </h1>
+        <br> <br>
+        <div class="calculat-form">
+            <form name="cf">
+                <input type="text" name="result" id="result" > <br> <br>
+                <input type="button" value="  7 " onclick="cf.result.value += '7'">
+                <input type="button" value="  8  " onclick="cf.result.value += '8'">
+                <input type="button" value="  9  " onclick="cf.result.value += '9'">
+                <input type="button" value="  ÷  " onclick="cf.result.value += ' / '">
+                <br> <br>
+                <input type="button" value=" 4  " onclick="cf.result.value += '4'">
+                <input type="button" value="  5  " onclick="cf.result.value += '5'">
+                <input type="button" value="  6  " onclick="cf.result.value += '6'">
+                <input type="button" value="  ×  " onclick="cf.result.value += '*'">
+                <br> <br>
+                <input type="button" value=" 1  " onclick="cf.result.value += ' 1 '">
+                <input type="button" value="  2  " onclick="cf.result.value += ' 2 '">
+                <input type="button" value="  3  " onclick="cf.result.value += ' 3 '">
+                <input type="button" value="  -  " onclick="cf.result.value += '-'">
+                <br> <br>
+                <input type="button" value="  0  " onclick="cf.result.value += '0 '">
+                <input type="button" value="  %  " onclick="cf.result.value += '%'">
+                <input type="button" value="  +  " onclick="cf.result.value += '+'">
+                <input type="button" value="  =  " onclick="cf.result.value = eval(cf.result.value)">
+                <br> <br>
+                <input type="button" value=" s$ " onclick="cf.result.value += '*3.5'">
+                <input type="button" value=" $s " onclick="cf.result.value += '/3.5'">
+                <input type="button" value=" su " onclick="cf.result.value += '*0.25'">
+                <input type="button" value=" us" onclick="cf.result.value += '/0.25'">
+                <br> <br>
+                <input type="button" value=" Clear All " onclick="cf.result.value = ''" id="clear">
+            
+            </form>
+        </div>
+    </body>
+</html>

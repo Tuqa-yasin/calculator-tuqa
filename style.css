@@ -1,0 +1,28 @@
+       #clear{
+                width:100px;   
+            }
+            .calculat-form{
+                width:179px;
+                height: 268px;
+                margin: auto;
+                border: 5px solid black;
+                border-radius: 9px;
+                background-color: lightgray;
+                text-align: center;
+                padding-top: 10px;
+            }
+            input{
+                
+                width:40px;
+                background-color:cornflowerblue;
+                color: white;
+                border-radius: 9px;
+                border: 1px solid gray;
+            }
+            #result{
+                width: 164px;
+                height: 30px;
+                background-color:darkseagreen;
+                border-radius: 9px;
+                
+            }

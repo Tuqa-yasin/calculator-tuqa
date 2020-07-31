@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all" >
+
+    </head>
+    
+    <body>
+        <h1 style="color:crimson;text-align: center;">Simple calculator using javascript , html and CSS </h1>
+        <br> <br>
+        <div class="calculat-form">
+            <form name="cf">
+                <input type="text" name="result" id="result" > <br> <br>
+                <input type="button" value="  7 " onclick="insertNum(7)">
+                <input type="button" value="  8  " onclick="insertNum(8)">
+                <input type="button" value="  9  " onclick="insertNum(9)">
+                <input type="button" value="  ÷  " onclick="operate('/')">
+                <br> <br>
+                <input type="button" value=" 4  " onclick="insertNum(4)">
+                <input type="button" value="  5  " onclick="insertNum(5)">
+                <input type="button" value="  6  " onclick="insertNum(6)">
+                <input type="button" value="  ×  " onclick="operate('*')">
+                <br> <br>
+                <input type="button" value=" 1  " onclick="insertNum(1)">
+                <input type="button" value="  2  " onclick="insertNum(2)">
+                <input type="button" value="  3  " onclick="insertNum(3)">
+                <input type="button" value="  -  " onclick="operate('-')">
+                <br> <br>
+                <input type="button" value="  0  " onclick="insertNum(0)">
+                <input type="button" value="  .  " onclick="insertDec()">
+                <input type="button" value="  +  " onclick="operate('+')">
+                <input type="button" value="  =  " onclick="equalOp()">
+                <br> <br>
+                <input type="button" value=" s$ " onclick="s2$()">
+                <input type="button" value=" $s " onclick="$2s()">
+                <input type="button" value=" su " onclick="s2u()">
+                <input type="button" value=" us" onclick="u2s()">
+                <br> <br>
+                <input type="button" value=" << " onclick="back()" >
+                <input type="button" value=" Clear All " onclick="clean()" id="clear">
+            
+            </form>
+        </div>
+        <script type="text/javascript" src="calculation.js"></script>
+    </body>
+</html>
